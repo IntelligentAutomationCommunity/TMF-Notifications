@@ -8,7 +8,7 @@ This provides a set of sub-tasks and flows to implement TM Forum OpenAPI Notific
 2. The TMF-Notifications-Notify-Listeners-Event-List Cortex automation Flow should be executed (probably asynchronously), passing the list as an input parameter.
 
 # TMF-Notifications-Create-Event
-This subtasks accepts the following parameters:
+This subtask accepts the following parameters:
 Input parameter Name | Description | Type | M/O |
 -----------|-------------|------|-----|
 **i_eventType**| The name of the event (e.g., PartyPrivacyProfileCreateEvent)| Text | M
@@ -19,7 +19,7 @@ Input parameter Name | Description | Type | M/O |
 **i_domain**| The domain of the event | Text | O
 **i_related-object**| The TM Forum object related to the event| Structure| M
 **i_related-object-type**| The type of the related object (e.g. PartyPrivacyProfile)|Text|M
-**i_related-object-specification**| The structure-to-JSON mapping for the related object, as described in the [CTX-Convert-to-JSON repository](https://github.com/IntelligentAutomationCommunity)| Structure|M
+**i_related-object-specification**| The structure-to-JSON mapping for the related object, as described in the [CTX-Convert-to-JSON repository](https://github.com/IntelligentAutomationCommunity/Cortex-convert-to-JSON)| Structure|M
 
 The subtask returns the following parameters:
 Output parameter Name | Description | Type |
@@ -47,7 +47,7 @@ This notification implementation wupports the use of the **fields** element in t
 This package utilises functionality from the following packages;
 1. [CTX-Configuration-Store](https://github.com/CortexIntelligentAutomation/CTX-Configuration-Store)
 2. [CTX-Logging](https://github.com/CortexIntelligentAutomation/CTX-Logging)
-3. [CTX-Convert-to-JSON](https://github.com/IntelligentAutomationCommunity)
+3. [CTX-Convert-to-JSON](https://github.com/IntelligentAutomationCommunity/Cortex-convert-to-JSON)
 
 Download the three SQL table creation scripts, and execute them to create the tables in a database. Modify the **ConnectionString** configuration variable in the **TMF-Notifications** area of the CTX-Configuration-Store.
 Download the Studio Package file and Import it into your Cortex Environment.
